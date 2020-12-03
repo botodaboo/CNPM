@@ -1,2 +1,2 @@
 # CNPM
-6 last days to complete the project :( 
+3 last days to complete the project :( 
