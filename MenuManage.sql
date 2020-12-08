@@ -4,10 +4,10 @@ use RestaurantManage
 
 create table Food
 (
-    Food_ID int IDENTITY(1,1) PRIMARY KEY,
-    Food_name nvarchar(40),
-    Price int,
-    [Description] nvarchar(255) NULL,
+    	Food_ID int IDENTITY(1,1) PRIMARY KEY,
+    	Food_name nvarchar(40),
+    	Price int,
+    	[Description] nvarchar(255) NULL,
 )
 
 create table Drink
@@ -32,11 +32,14 @@ create table [Order]
 
 create table MakeOrder
 (
-	WaitingOrder_ID int identity(1,1) primary key,
+	MakeOrder_ID int,
 	Food_ID int,
+	Drink_ID int,
 	Quantity int,
+	Table_ID int,
 	[Description] nvarchar(255) NULL,
 	foreign key (Food_ID) references Food(Food_ID),
+	foreign key (Drink_ID) references Drink(Drink_ID)
 )
 --------------------------------------------------------------------------------
 insert into Food
@@ -76,7 +79,7 @@ values (1, 2, 1, NuLL)
 insert into [Order] (Order_ID, Drink_ID, Quantity, [Description])
 values (1, 1, 2, NuLL)
 -----------------------------------------------
+insert into MakeOrder (MakeOrder_ID, Food_ID, Quantity, Tale_ID, [Description])
+values (1, 3, 1, 1 NULL)
 insert into MakeOrder
-values (1, 3, NULL)
-insert into MakeOrder
-values (2, 1, NULL)
+values (2, 1, 2, 4 NULL)
