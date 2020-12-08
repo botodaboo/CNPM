@@ -4,7 +4,7 @@ use MenuManage
 
 create table Food
 (
-    Food_ID varchar(10),
+    Food_ID int IDENTITY(1,1) PRIMARY KEY,
     Food_name nvarchar(40),
     Price int,
     [Description] nvarchar(255) NULL,
