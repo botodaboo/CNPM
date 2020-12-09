@@ -79,7 +79,3 @@ values (1, 2, 1, NuLL)
 insert into [Order] (Order_ID, Drink_ID, Quantity, [Description])
 values (1, 1, 2, NuLL)
 -----------------------------------------------
-insert into MakeOrder (MakeOrder_ID, Food_ID, Quantity, Tale_ID, [Description])
-values (1, 3, 1, 1 NULL)
-insert into MakeOrder
-values (2, 1, 2, 4 NULL)
