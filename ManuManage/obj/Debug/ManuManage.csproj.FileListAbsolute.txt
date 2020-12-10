@@ -1,0 +1,10 @@
+D:\ManuManage\bin\Debug\ManuManage.exe.config
+D:\ManuManage\bin\Debug\ManuManage.exe
+D:\ManuManage\bin\Debug\ManuManage.pdb
+D:\ManuManage\obj\Debug\ManuManage.csprojAssemblyReference.cache
+D:\ManuManage\obj\Debug\ManuManage.Form1.resources
+D:\ManuManage\obj\Debug\ManuManage.Properties.Resources.resources
+D:\ManuManage\obj\Debug\ManuManage.csproj.GenerateResource.cache
+D:\ManuManage\obj\Debug\ManuManage.csproj.CoreCompileInputs.cache
+D:\ManuManage\obj\Debug\ManuManage.exe
+D:\ManuManage\obj\Debug\ManuManage.pdb
