@@ -34,12 +34,12 @@ namespace ManuManage
 
     class Food
     {
-        public String Food_ID { set; get; }
+        public int Food_ID { set; get; }
         public String Food_name { set; get; }
         public int Food_price { set; get; }
         public String Food_des { set; get; }
 
-        public Food (String fID, String fName, int fPrice, String fDes)
+        public Food (int fID, String fName, int fPrice, String fDes)
         {
             Food_ID = fID;
             Food_name = fName;
@@ -51,12 +51,12 @@ namespace ManuManage
 
     class Drink
     {
-        public String Drink_ID { set; get; }
+        public int Drink_ID { set; get; }
         public String Drink_name { set; get; } 
         public int Drink_price { set; get; }
         public String Drink_des { set; get; }
 
-        public Drink (String dID, String dName, int dPrice, String dDes)
+        public Drink (int dID, String dName, int dPrice, String dDes)
         {
             Drink_ID = dID;
             Drink_name = dName;
