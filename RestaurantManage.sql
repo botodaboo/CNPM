@@ -5,31 +5,31 @@ use RestaurantManage
 create table Food
 (
     Food_ID int IDENTITY(1,1) PRIMARY KEY,
-    Food_name nvarchar(40),
-    Price int,
-    [Description] nvarchar(255) NULL,
+    Food_name nvarchar(40) not null,
+    Price int not null,
+    [Description] nvarchar(255) null,
 )
 ----------------------------------------------------------------------
 create table Drink
 (
 	Drink_ID int identity(1,1) primary key,
-	Drink_name nvarchar(40),
-	Price int,
-	[Description] nvarchar(255) NULL,
+	Drink_name nvarchar(40) not null,
+	Price int not null,
+	[Description] nvarchar(255) null,
 )
 ----------------------------------------------------------------------
 create table Customer
 (
 	Customer_ID int identity (1,1) primary key,
-	Customer_name nvarchar(40),
+	Customer_name nvarchar(40) not null,
 	Phone_number int null,
-	[Address] nvarchar(255) null,
+	[Address] nvarchar(255) not null,
 )
 ----------------------------------------------------------------------
 create table Employee
 (
 	Employee_ID int identity (1,1) primary key,
-	Employee_name nvarchar(40),
+	Employee_name nvarchar(40) not null,
 	[Role] nvarchar(40) not null,
 	Phone_number int null,
 )
@@ -37,14 +37,14 @@ create table Employee
 create table Shipper
 (
 	Shipper_ID int identity (1,1) primary key,
-	Shipper_name nvarchar(40),
+	Shipper_name nvarchar(40) not null,
 	Phone_number int null,
 )
 ----------------------------------------------------------------------
 create table TableNumber
 (
 	Table_ID int identity (1,1) primary key,
-	Seat int,
+	Seat int not null,
 )
 ----------------------------------------------------------------------
 create table MakeOrder
